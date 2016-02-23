@@ -1,0 +1,70 @@
+// About styles
+#about {
+    background-color: $darker;
+    color: $gray;
+}
+
+.section-header {
+    font-family: 'Nunito', sans-serif;
+    padding: 55px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+.bullet-icon {
+    text-align: center;
+    float: right;
+    margin: 10px 0;
+}
+
+.bullet {
+    border-left: 1px solid $dark;
+    padding: 25px;
+    border-radius: 3px;
+    margin-bottom: 110px;
+    &:first-child {
+        border-left: none;
+    }
+}
+
+.icon-one i {
+    @include icon;
+    background-color: $red;
+    transition: all .1s linear;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+    }
+    &:hover:before {
+        content: "\f061";
+        color: $red;
+    }
+}
+
+.icon-two i {
+    @include icon;
+    background-color: $pink;
+    transition: all .2s linear;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+    }
+    &:hover:before {
+        content: "\f061";
+        color: $pink;
+    }
+}
+
+.icon-three i {
+    @include icon;
+    background-color: $purple;
+    transition: all .2s linear;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+    }
+    &:hover:before {
+        content: "\f061";
+        color: $purple;
+    }
+}

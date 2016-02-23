@@ -1,0 +1,127 @@
+// Clients styles
+#clients {
+    background-color: $silver;
+    color: $gray;
+    margin: 0;
+    min-height: 1000px;
+}
+
+
+.clients-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 75%;
+	margin: 5em auto 0 auto;
+  padding-bottom: 110px;
+}
+
+.filter-container {
+	text-align: center;
+  margin: -10px 0;
+}
+
+.filter {
+  @include button;
+  background-color: $dark;
+  padding: 8px 12px;
+  width: 70px;
+  font-size: .8em;
+  &:hover {
+		background-color: lighten($dark, 5%);
+  }
+}
+
+.mix {
+	display: none;
+	text-align: center;
+	height: 300px;
+	width: 300px;
+	margin: 1em 1%;
+	background-color: #ccc;
+  filter: grayscale(.8);
+  h5 {
+		font-size: 2em;
+		margin: 0;
+		line-height: 200px;
+	}
+	&:hover {
+    .mix-overlay {
+			display: block;
+      }
+	}
+}
+
+.mix-overlay {
+	height: 100%;
+	width: 100%;
+	color: white;
+	background-color: $dark;
+	display: none;
+  i {
+    font-size: 5em;
+    line-height: 300px;
+    color: $gray;
+    cursor: pointer;
+  }
+}
+
+.client-one {
+	background: url('../img/one.jpg') center center;
+	background-size: cover;
+}
+
+.client-two {
+	background: url('../img/two.png') center center;
+	background-size: cover;
+}
+
+.client-three {
+	background: url('../img/three.png') center center;
+	background-size: cover;
+}
+
+.client-four {
+	background: url('../img/four.png') center center;
+	background-size: cover;
+}
+
+.client-five {
+	background: url('../img/five.jpg') center center;
+	background-size: cover;
+}
+
+.client-six {
+	background: url('../img/six.png') center center;
+	background-size: cover;
+}
+
+.client-seven {
+	background: url('../img/seven.jpg') center center;
+	background-size: cover;
+}
+
+.client-eight {
+	background: url('../img/eight.jpg') center center;
+	background-size: cover;
+}
+
+.client-nine {
+	background: url('../img/nine.png') center center;
+	background-size: cover;
+}
+
+.client-ten {
+	background: url('../img/ten.jpg') center center;
+	background-size: cover;
+}
+
+.client-eleven {
+	background: url('../img/eleven.jpg') center center;
+	background-size: cover;
+}
+
+.client-twelve {
+	background: url('../img/twelve.png') center center;
+	background-size: cover;
+}

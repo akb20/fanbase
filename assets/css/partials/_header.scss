@@ -1,0 +1,56 @@
+// Header styles
+.nav {
+    background-color: $darker;
+}
+
+.nav .container {
+    text-align: right;
+    height: 55px;
+    .logo {
+        float: left;
+        max-width: 37px;
+        margin-top: 9px;
+    }
+    li {
+        display: inline-block;
+        list-style: none;
+        line-height: 55px;
+    }
+    a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 30px;
+        transition: all .1s linear;
+        &:hover {
+            color: $gray;
+        }
+    }
+}
+
+.hero {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        font-family: 'Nunito', sans-serif;
+        font-size: 8em;
+        font-weight: 300;
+        margin: -60 0 0 0;
+        text-transform: uppercase;
+        color: white;
+    }
+    .kicker {
+        color: white;
+        font-size: 1.2em;
+        margin-bottom: 75px;
+    }
+}
+
+.btn-cta-one {
+    @include button;
+}
